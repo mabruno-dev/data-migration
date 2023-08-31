@@ -117,12 +117,6 @@ def changing_reading_onboaradold_tuple(table_name):
 # #Here I'll call the "reading function" to get all the values from the tables and add to tables
 def adding_to_onboard(table_name):
     archives = changing_reading_onboaradold_tuple(table_name)
-    """DRIVER={SQL Server};
-    SERVER=SERVIDOR;
-    DATABASE=onboard;
-    UID=inffel;
-    PWD=*inFF3l&2016;
-    Trusted_Connection=no;"""
 
     conn_str = f"""DRIVER={'{SQL Server}'};
     SERVER={fn.ler_ini('CONNECTION_TARGET','HOST')};
